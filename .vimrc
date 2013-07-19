@@ -46,15 +46,15 @@ set autoindent
 set smarttab
 set expandtab
 
-au! FileType python setl noautoindent
-au! FileType python setl nocindent
+filetype indent on
+au! Filetype python setl et ts=4 sw=4
 
 " Visual
 set showmatch  " Show matching brackets.
 set mat=5  " Bracket blinking.
 set list
 " Show $ at end of line and trailing space as ~
-set lcs=tab:\ \ ,eol:$,trail:~,extends:>,precedes:<
+set lcs=tab:\ \ ,trail:~,extends:>,precedes:<
 set novisualbell  " No blinking .
 set noerrorbells  " No noise.
 set laststatus=2  " Always show status line.
